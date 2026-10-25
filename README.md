@@ -112,15 +112,6 @@ git push -u origin main
 
 Review `.gitignore` before pushing. Never commit `.venv`, `node_modules`, raw downloads, processed JSON, secrets, or credentials.
 
-## Demo video
-
-Record one unlisted YouTube video of no more than ten minutes:
-
-- Part 1, up to five minutes: pitch the buyer problem, choose a delivery day, show the selected forecast at the cutoff, then show the accuracy metrics, chart, error ranges, and practical takeaway.
-- Part 2, up to five minutes: explain the repository, pipeline, cutoff logic, SQLite snapshot, FastAPI endpoints, React/Tailwind/shadcn UI, tests, Docker, and deployment split.
-
-The video link must be added to the final submission. YouTube upload requires the presenter’s account and cannot be completed automatically from this workspace.
-
 ## AI tools
 
 AI-assisted development was used for API exploration, code scaffolding, UI iteration, documentation, and test/debug assistance. Generated code was reviewed, adapted, and verified with tests and build checks.
