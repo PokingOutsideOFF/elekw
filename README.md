@@ -97,6 +97,19 @@ Vercel is suitable for the React frontend. The FastAPI service should be deploye
 
 Vercel cannot reach a local Windows FastAPI server, so both services must be publicly hosted for a public demo.
 
+## Public links
+
+- GitHub repository: [github.com/PokingOutsideOFF/elekw](https://github.com/PokingOutsideOFF/elekw)
+- Frontend application: **Replace this with the deployed Vercel URL**
+- Backend API: **Replace this with the deployed Render URL**
+
+After deployment, update this section with links in this format:
+
+```text
+Frontend: https://your-app.vercel.app
+Backend: https://your-api.onrender.com
+```
+
 ## GitHub submission
 
 Create a public repository with an anonymous name such as `kjhwr`, then run from this directory:
