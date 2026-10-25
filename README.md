@@ -84,50 +84,14 @@ python backend/scripts/build_snapshot.py
 
 The downloader requires network access to Elexon. Generated raw and processed JSON files are deliberately excluded from Git; the SQLite snapshot is the deployable artifact.
 
-## Vercel deployment
-
-Vercel is suitable for the React frontend. The FastAPI service should be deployed separately because it currently runs as a normal Python service and reads a SQLite snapshot.
-
-1. Push the repository to GitHub.
-2. Import it into Vercel and set the project root to `frontend` if deploying that folder only.
-3. Deploy `backend/Dockerfile` separately on Render, Railway, Fly.io, or a VM.
-4. Set Vercel’s `VITE_API_BASE_URL` environment variable to the deployed backend HTTPS URL.
-5. Add the final Vercel domain to the backend CORS configuration.
-6. Verify `/health`, `/api/decision`, and `/api/accuracy/summary`.
-
-Vercel cannot reach a local Windows FastAPI server, so both services must be publicly hosted for a public demo.
-
 ## Public links
 
-- GitHub repository: [github.com/PokingOutsideOFF/elekw](https://github.com/PokingOutsideOFF/elekw)
-- Frontend application: **Replace this with the deployed Vercel URL**
-- Backend API: **Replace this with the deployed Render URL**
-
-After deployment, update this section with links in this format:
-
-```text
-Frontend: https://your-app.vercel.app
-Backend: https://your-api.onrender.com
-```
-
-## GitHub submission
-
-Create a public repository with an anonymous name such as `kjhwr`, then run from this directory:
-
-```powershell
-git init
-git add .
-git commit -m "Build UK wind forecast decision support pilot"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/kjhwr.git
-git push -u origin main
-```
-
-Review `.gitignore` before pushing. Never commit `.venv`, `node_modules`, raw downloads, processed JSON, secrets, or credentials.
+- Frontend application: https://elekw.vercel.app/
+- Backend API: https://uk-wind-forecast-api-6bfd.onrender.com
 
 ## AI tools
 
-AI-assisted development was used for API exploration, code scaffolding, UI iteration, documentation, and test/debug assistance. Generated code was reviewed, adapted, and verified with tests and build checks.
+AI-assisted development using Codex was done for API exploration, code scaffolding, UI iteration, documentation, and test/debug assistance. Generated code was reviewed, adapted, and verified with tests and build checks.
 
 ## Limitations
 
